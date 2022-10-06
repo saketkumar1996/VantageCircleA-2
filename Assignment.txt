@@ -1,0 +1,13 @@
+Assignment instructions
+
+1. Create a responsive One Page HTML Layout as provided in the design(Assignment.png inside images folder).
+
+2. You can use any framework (for example bootstrap) to build the responsive page(mobile friendly).
+
+3. Use the following color hexcodes: Purple - #5b3b97 Black - #2c2d4f
+
+4. Clicking on the Menu, it should scroll down to its respective section. For example, clicking on Companies, it should scroll down to Our Companies section and likewise. 
+
+5. While scrolling the page, the header menu must be sticky.
+
+6. In mobile view, the header menu should be a dropdown menu.

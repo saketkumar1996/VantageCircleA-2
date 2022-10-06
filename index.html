@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!-- navbar -->
+    
+    <nav class="sticky top-0 bg-white pt-4  text-[#2c2d4f]  font-medium navt">
+        <div class="container  flex justify-between  mx-auto">
+            <a rel="" href="#" aria-label="Back to homepage" class="flex items-center  ml-[50px] bg-white">
+                <img src="./images/bargain-technologies.png" alt="" width="150px" height="20px">
+            </a>
+            <ul class="items-stretch hidden space-x-3 md:flex mr-[50px]">
+                <li class="flex hover:text-[#5b3b97]">
+                    <a rel="noopener noreferrer" href="#hero-area" class="flex items-center px-4 -mb-1  dark:border-transparent">Home</a>
+                </li>
+                <li class="flex hover:text-[#5b3b97]">
+                    <a rel="noopener noreferrer" href="#company" class="flex items-center px-4 -mb-1  dark:border-transparent">Company</a>
+                </li>
+                <li class="flex hover:text-[#5b3b97]">
+                    <a rel="noopener noreferrer" href="#team" class="flex items-center px-4 -mb-1  dark:border-transparent dark:text-violet-400 dark:border-violet-400">Team</a>
+                </li>
+                <li class="flex hover:text-[#5b3b97]">
+                    <a rel="noopener noreferrer" href="#contact" class="flex items-center px-4 -mb-1  dark:border-transparent">Contact us</a>
+                </li>
+            </ul>
+            <button class="flex justify-end p-4 md:hidden mobile-menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="hidden mobile-menu bg-white text-[#2c2d4f]">
+          <ul class="">
+            <li><a href="#hero-area" class="block text-sm px-2 py-4 font-semibold hover:text-[#5b3b97]">Home</a></li>
+            <li><a href="#company" class="block text-sm px-2 py-4  transition duration-300 hover:text-[#5b3b97]">Company</a></li>
+            <li><a href="#team" class="block text-sm px-2 py-4 transition duration-300 hover:text-[#5b3b97]">Team</a></li>
+            <li><a href="#contact" class="block text-sm px-2 py-4  transition duration-300 hover:text-[#5b3b97]">Contact Us</a></li>
+
+          </ul>
+        </div>
+        <script>
+          // Grab HTML Elements
+          const btn = document.querySelector("button.mobile-menu-button");
+          const menu = document.querySelector(".mobile-menu");
+        
+          // Add Event Listeners
+          btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+          });
+        </script>
+      </nav>
+ 
+    <!-- navbar -->
+
+    <!-- hero -->
+    <section id = "hero-area" class=" my-0 ">
+        <div  class="container  flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+            <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+                <h1 class="herot">Creating products to  
+                    <span class="dark:text-violet-400">better engage </span>corporate employees
+                </h1>
+                <p class="mt-6 mb-8 text-base text-[#2c2d4f] sm:mb-12 font-light ">Enrich your company culture with our employee rewards, on-spot
+                    <br class="hidden md:inline lg:hidden">recognition, feedback and wellness solutions designed for today’s <br class="hidden md:inline lg:hidden"> global workforce
+                </p>
+                <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+                  <button type="button" class="px-8 py-3 font-semibold border-white border rounded-full bg-[#5b3b97] text-white">Contact us</button>
+
+                </div>
+            </div>
+            <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 ">
+                <img src="./images/home-illustration.png" alt="" class="object-contain   h-72 sm:h-80 lg:h-[520px] xl:h-112 2xl:h-128">
+            </div>
+            
+        </div>
+
+    </section>
+   
+    <!-- hero -->
+
+
+    <!-- our company -->
+
+    <section id="company" class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-2">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Companies </h1>
+            <span class=" ml-[48%] inline-block h-[3px] w-12 rounded bg-indigo-500  mb-6 "></span>
+            </div>
+          <div class="flex flex-wrap mx-4 mb-10 text-center">
+ 
+            <div class="lg:w-1/2 md:w-1/2 w-full">
+              
+              <div class="rounded-lg h-50 flex justify-center overflow-hidden text-center ">
+                <img alt="content" class="object-cover object-center self-center" src="./images/vclogo.png" style="height: 80px; width:80px">
+              </div>
+              <div class="h-[8em]">
+                <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Vantage Circle</h2>
+                <p class="leading-relaxed text-base">A company that promotes employee <br> rewards, on-spot recognition, employee <br> feedback solutions designed for today’s <br> global workforce.</p>
+              </div>
+              <button class="px-8 py-3 flex mx-auto mt-6 font-semibold border-white border rounded-full bg-[#5b3b97] text-white">Visit Site</button>
+            </div>
+            <div class="lg:w-1/2 md:w-1/2 w-full mb-10 px-4">
+              <div class="rounded-lg h-50 flex justify-center overflow-hidden text-center">
+                <img alt="content" class="object-cover object-center self-center" src="./images/vfitlogo.png" style="height: 80px; width:80px">
+              </div>
+              <div class="h-[8em]">
+                <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Vantage Fit</h2>
+                <p class="leading-relaxed text-base">A health and wellness company that <br> promotes overall health and well-being of <br> your employees.</p>
+              </div>
+              <button class="px-8 py-3 flex mx-auto mt-6 font-semibold border-white border rounded-full bg-[#5b3b97] text-white">Visit Site</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- our company -->
+    
+    <!-- global capability -->
+
+    <section id="global" class="bg-[#f9f9f9]">
+        <div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+            <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+                <h1 class="text-lg  leading-none sm:text-6xl title-font">Global <br> Capabilities</h1>
+                <div>
+                  &nbsp;
+                </div>
+                <div class="flex justify-around">
+                  <div class="text-[#4c5267] ">
+                    <p class="countries"> 70+</p>
+                  <h3 class=" font-medium ">Countries</h3>
+                  </div>
+                  <div class="text-[#4c5267]">
+                    <p class="countries"> 6K+ </p>
+                  <h3 class=" font-medium ">Worldwide Brands</h3>
+                  </div>
+                </div>
+                <div class="flex justify-around">
+                  <div class="text-[#4c5267]">
+                    <p class="countries"> 600+</p>
+                  <h3 class=" font-medium ">Company</h3>
+                  </div>
+                  <div class="text-[#4c5267]">
+                    <p class="countries"> 1.8M+ </p>
+                  <h3 class=" font-medium "> Corporate Employees</h3>
+                  </div>
+                </div>
+                <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+
+                </div>
+            </div>
+            <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+                <img src="./images/global-illustration1.png" alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+            </div>
+        </div>
+    </section>
+
+    <!-- our Team  -->
+
+    <section  id="team"class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Meet Our team </h1>
+            <span class=" ml-[48%] inline-block h-[3px] w-12 rounded bg-indigo-500  mb-6 "></span>
+            
+            
+ 
+          </div>
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 lg:w-1/2 md:w-1/1 w-full relative">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-[100px] h-[100px] bg-gray-100 object-cover object-center flex-shrink-0  mr-4" src="./images/2.jpeg">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">PARTHA NEOG</h2>
+                  <p class="text-gray-500">Founder and Chief Executive Officer</p>
+                </div>
+                <img src="./images/linkedinicon.png" alt="" height="30px" width="30px" class="absolute top-10 right-5 " >
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/2 md:w-1/1 w-full relative">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-[100px] h-[100px] bg-gray-100 object-cover object-center flex-shrink-0  mr-4" src="./images/1.jpeg">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">ANJAN PATHAK</h2>
+                  <p class="text-gray-500">Founder and Chief Technology officer</p>
+                </div>
+                <img src="./images/linkedinicon.png" alt="" height="30px" width="30px" class="absolute top-10 right-5 " >
+
+              </div>
+            </div>
+
+
+            <div class="p-2 lg:w-1/2 md:w-1/1 w-full relative">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-[100px] h-[100px] bg-gray-100 object-cover object-center flex-shrink-0  mr-4" src="./images/4.jpeg">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">RAMAKRISHNAN KC</h2>
+                  <p class="text-gray-500">Founder and Advisor</p>
+                </div>
+                <img src="./images/linkedinicon.png" alt="" height="30px" width="30px" class="absolute top-10 right-5 " >
+
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/2 md:w-1/1 w-full relative">
+              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img alt="team" class="w-[100px] h-[100px] bg-gray-100 object-cover object-center flex-shrink-0  mr-4" src="./images/3.jpeg">
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">RAGHU BATHINA</h2>
+                  <p class="text-gray-500">Advisor</p>
+                </div>
+                <img src="./images/linkedinicon.png" alt="" height="30px" width="30px" class="absolute top-10 right-5 " >
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact us -->
+
+      <section id="contact"class=" py-2 bg-[#5b3b97] text-white">
+        <div class="container mx-auto flex flex-col items-center justify-center p-4 space-y-8 md:p-10 lg:space-y-0 lg:flex-row lg:justify-between">
+            <div>
+              <h1 class="text-3xl font-bold leading-tight text-center lg:text-left mb-2">Contact us</h1>
+            <p class="flex">We're here to help and answer any question you might have. We look <br>forward to hear from you </p>
+            </div>
+          <button type="button" class="px-8 py-3 font-light border-white border rounded-full ">Contact us</button>
+        </div>
+      </section>
+      <footer>
+        <div class="flex justify-around p-4 text-[#677294] text-sm font-light"> 
+          <p> Copyright &copy; 2020 Bargain Technology All Rights Reserved</p>
+          <p><i class="fa-solid fa-location-dot mr-2"></i>Vantage Circle, Nelson Mandela Road, Vasant Kunj, New Delhi, Delhi</p>
+        </div>
+      </footer>
+
+    
+</body>
+</html>

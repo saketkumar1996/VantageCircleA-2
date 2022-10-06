@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: poppins;
+
+}
+
+
+.herot{
+    color: #2c2d4f;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+.navt{
+    z-index: 1;
+    height: 90px;
+}
+
+
+#hero-area {
+    background-image: url(https://res.cloudinary.com/vantagecircle/image/upload/v1591877034/bargaintechnologies/pattern.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 462px;
+    position: relative;
+    overflow: hidden;
+    
+    /* padding: 180px 0 160px; */
+}
+
+
+.countries{
+    color: #4c5267;
+    font-size: 46px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
